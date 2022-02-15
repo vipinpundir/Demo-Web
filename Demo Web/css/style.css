@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+::after,
+::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%; /*  default size is 16px but hame 10 px chaye. or % me taki web serponsive bne */
+}
+
+/* ###########       Utility classes                 ########## */
+
+/* .container{
+    max-width: 1250px;
+    width: 90%;
+    margin: auto;
+} */
+
+.lg-heading{
+    font-size: 3.5rem;
+
+}
+
+.md-heading{
+    font-size: 2.2rem;
+
+}
+
+.text-black{
+    color: #333;
+
+}
+.text-light{
+    color: #f4f4f4;
+
+}
+
+.text-red{
+    color: #e63946;
+
+}
+.text-gray{
+    color: #555;
+
+}
+.text-blue{
+    color: rgba(137, 43, 226, 0.63);
+}
+.btn{   display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+    margin: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgba(137, 43, 226, 0.63);
+    color: #f4f4f4;
+}
+
+
+/* ###############   NAVBAR STYLE   ############### */
+/* ######### for laptop ####### */
+.navbar input[type= "checkbox"],
+.navbar .hamburger-lines{
+      display: none;
+   }
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #ffffff;
+}
+.navitem li{
+    list-style: none;
+    margin-left: 4rem;
+}
+.navbar-lists{
+ display: flex;
+ margin-left: 10rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: #e63946;
+    font-size: medium;
+}  
+
+.navbar .logo a{
+   font-size: 4rem;
+   color: rgb(27, 27, 27);
+}
+.navbar-option{
+    color: #e63946;
+    border: none;
+    width: 12rem;
+    font-size: medium;
+}
+.navbar-option option:hover{
+    color: rgba(0, 0, 0, 0.384);
+}
+.navitem a:hover{
+        color: rgba(0, 0, 0, 0.384);
+}
+
+
+.section1{
+    height: 400px;
+    background-color: rgba(137, 43, 226, 0.63);
+    color: #f4f4f4;
+    padding: 5rem;
+    padding-top: 15%;
+    text-align: center;
+}
+.section1 h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.section1 p{
+    font-size: 1.7rem;
+}
+
+/* ################      .section2 style    ################ */
+.section2{
+    display: flex;
+    margin: 5rem;
+    height: 120vh;
+    font-size: 1.5rem;
+}
+.section2 .box1{
+    width: 60%;
+}
+.section2 .box2{
+    width: 40%;
+    background-color: rgba(137, 43, 226, 0.63);
+    text-align: center;
+    padding: 3rem;
+    padding-top: 15%;
+    font-size: 2rem;
+}
+.box2 img{
+    width: 100px;
+    border-radius: 50%;
+}
+.label-text{
+    display: flex;
+    padding-right: 3rem;
+}
+.label-text1,
+.label-text2{
+    width: 100%;
+    margin-top: 2rem;
+}
+.label-text2{
+    margin-left: 2rem;
+}
+.label-text input{
+    width: 100%;
+    height: 4rem;
+}
+.section2-option{
+    width: 96%;
+    height: 4rem;
+}
+/* #########################   section 3 style   ################# */
+
+.section3{
+    text-align: center;
+    margin: 10rem;
+
+}
+.section3 h1{
+    font-size: 3rem;
+}
+.section3 img{
+    display: block;
+    margin: 4rem;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+/* ################     section 4 style      ###############    */
+.customer-review-h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.customer{
+    height: 350px;
+    width: 45%;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.705);
+}
+.review-section .customers-all{
+    display: flex;
+    justify-content: space-around;
+    margin: 10rem 4rem;
+}
+.customer{
+    text-align: center;
+    padding: 3rem;
+}
+.customer-img img{
+    width: 100px;
+    border-radius: 50%;
+}
+.customer-img{
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.review-section .customer-text,
+.review-section p{
+font-size: 1.6rem;
+}
+.customer:hover{
+    box-shadow: 0px 0px 50px 0px rgb(0, 0, 0);
+}
+
+/* ################     section 5 style      ###############    */
+
+.section5{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(54, 54, 54);
+    background-color: rgb(34, 34, 34);
+    height: 500px;
+    padding-top: 8%;
+}
+.section5 li{
+    list-style: none;
+    margin: 2rem 0;
+}
+.section5 h1{
+color: #f4f4f4;
+font-size: 2.5rem;
+}
+.section5 li a{
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+.section5 li a:hover{
+    color: blueviolet;
+}
+
+/* ########## FOTER style   ######### */
+
+.foter{
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center;
+    font-size: 1.3rem;
+    list-style: none;
+    color: rgb(170, 170, 170);
+}
+.foter li a{
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    margin: 2rem;
+}
+.foter-text2{
+    display: flex;
+}
+.foter li a:hover{
+    color: #333;
+}
+
+
+/* 333333333333333       MEDIA QUARI33333333333  */
+
+@media (max-width: 768px){
+    html{
+        font-size: 56.5%; 
+    }
+
+
+    .navbar .hameburger-menu input[type="checkbox"],
+    .navbar .hameburger-menu .hamburger-lines{
+        display: block;
+    }
+    .navbar{
+        display: block;
+        height: 64px;
+        position: relative;
+        position: fixed;
+    }
+    .navbar .hameburger-menu input[type="checkbox"]{
+        position: absolute;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+         z-index: 5;
+         opacity:0;
+    }
+    .navbar .logo{
+        display: none;
+    }
+    .navbar .hameburger-lines{
+        position: absolute;
+        height: 32px;
+        width: 36px;
+        top: 20px;
+        left: 20px;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar .hameburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background-color:  #333;
+    }
+
+
+    .navbar-lists{
+        border: 2px solid blue;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-lists li{
+        margin: 3rem;
+    }
+    .navbar-lists li a{
+        color: #f4f4f4;
+    }
+    .navbar .navitem .navbar-lists{
+        padding-top: 100px;
+        background-color: rgb(137, 43, 226);
+        height: 100vh;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition:  transform 0.3s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+    }
+    .navbar .hameburger-menu input[type="checkbox"]:checked ~ .navbar .navitem .navbar-lists{
+        transform: translateX(0%);
+    }
+    .navbar .hameburger-menu input[type="checkbox"]:checked ~ .hameburger-lines .line1{
+        transform: rotate(45deg);
+    }
+ 
+    .navbar .hameburger-menu input[type="checkbox"]:checked ~ .hameburger-lines .line2{
+        transform: rotate(-45deg);
+    }
+ 
+    .navbar .hameburger-menu input[type="checkbox"]:checked ~ .hameburger-lines .line3{
+        opacity: 0;
+    }
+   
+    .section1{
+    padding-top:  30%;
+    }
+
+    .section2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .section2 .box1,
+    .section2 .box2{
+        width: 100%;
+    }
+    .section3 img{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        object-position: center;
+    }
+    .section3{
+        display: block;
+        margin: 2rem;
+    }
+    .section3 img{
+        max-width: 90%;
+    }
+
+    .review-section .customers-all{
+       flex-direction: column;
+        margin: 10rem 4rem;
+    }
+    .customer{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .section5{
+        flex-direction: column;
+        height: auto;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+    }
+    .section5-box{
+        margin-bottom: 2rem;
+    }
+    .foter{
+        flex-direction: column-reverse;
+    }
+}
